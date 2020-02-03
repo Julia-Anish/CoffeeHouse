@@ -8,6 +8,9 @@
     tools:context=".DrinkMenu"
     android:orientation="vertical"
     android:background="@color/colorAccent">
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar" />
 
 
     <ImageView
