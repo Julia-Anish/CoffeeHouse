@@ -9,11 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ParticularFood"></activity>
-        <activity android:name=".ParticularDrink" />
-        <activity android:name=".ProfitableOffer" />
-        <activity android:name=".FoodMenu" />
-        <activity android:name=".DrinkMenu" />
+        <activity
+            android:name=".OrderActivity"
+            android:label = "@string/create_order"
+            android:parentActivityName=".MainActivity">
+        </activity>
+        <activity
+            android:name=".ParticularFood"
+            android:parentActivityName=".FoodMenu"/>
+        <activity
+            android:name=".ParticularDrink"
+            android:parentActivityName=".DrinkMenu"/>
+        <activity
+            android:name=".ProfitableOffer"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FoodMenu"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".DrinkMenu"
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
